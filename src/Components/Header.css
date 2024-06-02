@@ -1,0 +1,64 @@
+/* Prevent horizontal scrolling */
+html, body {
+    overflow-x: hidden;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container for the images */
+.container {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure images do not wrap */
+    justify-content: flex-start; /* Align images to the start */
+    align-items: center; /* Center images vertically */
+    position: relative; /* Ensure position for absolute overlay */
+    max-width: 100vw; /* Adjusted width */
+    padding: 20px 0; /* Adjust padding as needed */
+    overflow-x: hidden; /* Prevent horizontal overflow */
+}
+
+/* Overlay styling */
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9); /* Black overlay with 50% opacity */
+    z-index: 1; /* Ensures the pseudo-element is above the images */
+}
+
+/* Image wrapper and image styles remain the same */
+.image-wrapper {
+    position: relative;
+    overflow: hidden; /* Ensure no overflow */
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the images cover the div without distortion */
+}
+
+.additional-image {
+    position: absolute;
+    z-index: 2; /* Ensures additional images are above the main images */
+}
+
+.additional-image-1 {
+    top: 30%; /* Adjust top position as needed */
+    left: 45%; /* Adjust left position as needed */
+    width: 160px;
+    height: 73px;
+}
+
+.additional-image-2 {
+    top: 70%; /* Adjust top position as needed */
+    left: 45%; /* Adjust left position as needed */
+    width: 140px;
+    height: 20px;
+}

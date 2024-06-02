@@ -1,0 +1,60 @@
+/* Course.css */
+
+.Professional {
+    position: relative;
+    top: 40px;
+    left: 0px;
+    color: rgb(255, 255, 255);
+    margin-bottom: 20px; /* Add some space below the heading */
+}
+
+.Course {
+    position: relative;
+    left: 60px;
+    margin-bottom: 80px; /* Add space below the course section */
+}
+
+.certificate {
+    position: relative;
+    top: 120px;
+    background-color: rgba(67, 66, 66, 0.664); /* White with 66.4% transparency */
+    padding-left: 10px; /* Adjust padding as needed */
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border: 1px none #ccc; /* Optional: Add border for visual separation */
+    border-radius: 5px; /* Adjust border radius as needed */
+    color: white; /* Text color */
+    max-width: 600px; /* Optional: Set a max width */
+    margin: 20px auto; /* Center the box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Optional: Add a subtle shadow for better visibility */
+    font-family: Arial, sans-serif; /* Optional: Set a font */
+}
+
+.rate {
+    position: relative;
+    top: 94px;
+    left: 270px;
+    color: rgb(255, 187, 0); /* Text color */
+}
+
+
+.ticks-container {
+    position: relative;
+    top: 220px;
+    left: 0; /* Adjust left positioning as needed */
+    color: white;
+}
+
+.tick {
+    display: block; /* Ensure each tick and text pair is on a new line */
+    margin-bottom: 10px; /* Space between each tick item */
+    font-size: 16px; /* Adjust size as needed */
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .Course {
+        left: 30px; /* Adjust left position for smaller screens */
+    }
+}
